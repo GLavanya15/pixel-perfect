@@ -6,7 +6,7 @@ export interface FieldMapping {
   table: string;
   schemaColumn: string;
   status: MappingStatus;
-  note?: string;
+  note?: string | undefined;
 }
 
 const t = (sheet: string, table: string, cols: [string, string, MappingStatus?, string?][]): FieldMapping[] =>
