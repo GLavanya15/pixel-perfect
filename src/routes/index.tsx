@@ -81,7 +81,7 @@ function Origin() {
           )}
         </Panel>
 
-        <Panel to="/workforce" code="—" title="Company metrics" className="md:col-span-6">
+        <Panel to="/profile" code="—" title="Company metrics" className="md:col-span-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {metrics.map((m) => (
               <div key={m.companyMetricId}>

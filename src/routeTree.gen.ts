@@ -10,14 +10,29 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AwardsRouteImport } from './routes/awards'
+import { Route as FinancialsRouteImport } from './routes/financials'
 import { Route as HistoryRouteImport } from './routes/history'
 import { Route as LeadershipRouteImport } from './routes/leadership'
+import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as MappingRouteImport } from './routes/mapping'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as WorkforceRouteImport } from './routes/workforce'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AwardsRoute = AwardsRouteImport.update({
+  id: '/awards',
+  path: '/awards',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FinancialsRoute = FinancialsRouteImport.update({
+  id: '/financials',
+  path: '/financials',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HistoryRoute = HistoryRouteImport.update({
@@ -30,6 +45,16 @@ const LeadershipRoute = LeadershipRouteImport.update({
   path: '/leadership',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LocationsRoute = LocationsRouteImport.update({
+  id: '/locations',
+  path: '/locations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MappingRoute = MappingRouteImport.update({
+  id: '/mapping',
+  path: '/mapping',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProfileRoute = ProfileRouteImport.update({
   id: '/profile',
   path: '/profile',
@@ -40,43 +65,99 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkforceRoute = WorkforceRouteImport.update({
+  id: '/workforce',
+  path: '/workforce',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/awards': typeof AwardsRoute
+  '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
   '/leadership': typeof LeadershipRoute
+  '/locations': typeof LocationsRoute
+  '/mapping': typeof MappingRoute
   '/profile': typeof ProfileRoute
   '/services': typeof ServicesRoute
+  '/workforce': typeof WorkforceRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/awards': typeof AwardsRoute
+  '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
   '/leadership': typeof LeadershipRoute
+  '/locations': typeof LocationsRoute
+  '/mapping': typeof MappingRoute
   '/profile': typeof ProfileRoute
   '/services': typeof ServicesRoute
+  '/workforce': typeof WorkforceRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/awards': typeof AwardsRoute
+  '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
   '/leadership': typeof LeadershipRoute
+  '/locations': typeof LocationsRoute
+  '/mapping': typeof MappingRoute
   '/profile': typeof ProfileRoute
   '/services': typeof ServicesRoute
+  '/workforce': typeof WorkforceRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/history' | '/leadership' | '/profile' | '/services'
+  fullPaths:
+    | '/'
+    | '/awards'
+    | '/financials'
+    | '/history'
+    | '/leadership'
+    | '/locations'
+    | '/mapping'
+    | '/profile'
+    | '/services'
+    | '/workforce'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/history' | '/leadership' | '/profile' | '/services'
-  id: '__root__' | '/' | '/history' | '/leadership' | '/profile' | '/services'
+  to:
+    | '/'
+    | '/awards'
+    | '/financials'
+    | '/history'
+    | '/leadership'
+    | '/locations'
+    | '/mapping'
+    | '/profile'
+    | '/services'
+    | '/workforce'
+  id:
+    | '__root__'
+    | '/'
+    | '/awards'
+    | '/financials'
+    | '/history'
+    | '/leadership'
+    | '/locations'
+    | '/mapping'
+    | '/profile'
+    | '/services'
+    | '/workforce'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AwardsRoute: typeof AwardsRoute
+  FinancialsRoute: typeof FinancialsRoute
   HistoryRoute: typeof HistoryRoute
   LeadershipRoute: typeof LeadershipRoute
+  LocationsRoute: typeof LocationsRoute
+  MappingRoute: typeof MappingRoute
   ProfileRoute: typeof ProfileRoute
   ServicesRoute: typeof ServicesRoute
+  WorkforceRoute: typeof WorkforceRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -86,6 +167,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/awards': {
+      id: '/awards'
+      path: '/awards'
+      fullPath: '/awards'
+      preLoaderRoute: typeof AwardsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/financials': {
+      id: '/financials'
+      path: '/financials'
+      fullPath: '/financials'
+      preLoaderRoute: typeof FinancialsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/history': {
@@ -102,6 +197,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LeadershipRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/locations': {
+      id: '/locations'
+      path: '/locations'
+      fullPath: '/locations'
+      preLoaderRoute: typeof LocationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mapping': {
+      id: '/mapping'
+      path: '/mapping'
+      fullPath: '/mapping'
+      preLoaderRoute: typeof MappingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/profile': {
       id: '/profile'
       path: '/profile'
@@ -116,15 +225,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/workforce': {
+      id: '/workforce'
+      path: '/workforce'
+      fullPath: '/workforce'
+      preLoaderRoute: typeof WorkforceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AwardsRoute: AwardsRoute,
+  FinancialsRoute: FinancialsRoute,
   HistoryRoute: HistoryRoute,
   LeadershipRoute: LeadershipRoute,
+  LocationsRoute: LocationsRoute,
+  MappingRoute: MappingRoute,
   ProfileRoute: ProfileRoute,
   ServicesRoute: ServicesRoute,
+  WorkforceRoute: WorkforceRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
