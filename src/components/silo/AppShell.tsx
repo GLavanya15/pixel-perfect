@@ -1,9 +1,8 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { ChevronRight, Menu, Moon, PanelLeftClose, PanelLeftOpen, Sun, X } from "lucide-react";
 import { SECTIONS } from "./sections";
 import { useSiloTheme } from "./theme";
-import { SiloGuide } from "./SiloGuide";
 import { cn } from "@/lib/utils";
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -11,109 +10,116 @@ export function AppShell({ children }: { children: ReactNode }) {
   const current = SECTIONS.find((s) => s.to === path);
   const { theme, toggle } = useSiloTheme();
   const [open, setOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
-  const nav = (
-    <nav aria-label="About Consilio sections" className="flex flex-col gap-0.5">
+  useEffect(() => {
+    setCollapsed(localStorage.getItem("siloverse-nav") === "collapsed");
+  }, []);
+  const toggleCollapsed = () => {
+    setCollapsed((c) => {
+      localStorage.setItem("siloverse-nav", c ? "expanded" : "collapsed");
+      return !c;
+    });
+  };
+
+  const nav = (compact: boolean) => (
+    <nav aria-label="Sections" className="flex flex-col gap-1">
       {SECTIONS.map((s) => {
         const active = s.to === path;
+        const Icon = s.icon;
         return (
           <Link
             key={s.to}
             to={s.to}
             onClick={() => setOpen(false)}
             aria-current={active ? "page" : undefined}
+            aria-label={compact ? s.label : undefined}
+            title={compact ? s.label : undefined}
             className={cn(
-              "group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors",
-              active ? "bg-beacon-soft text-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground",
+              "flex h-10 items-center gap-3 rounded-lg px-3 text-sm transition-colors",
+              compact && "justify-center px-0",
+              active ? "bg-beacon-soft font-medium text-beacon" : "text-muted-foreground hover:bg-muted hover:text-foreground",
             )}
           >
-            <span className={cn("font-mono text-[0.65rem]", active ? "text-beacon" : "text-muted-foreground")}>{s.code}</span>
-            <span className="flex-1">{s.label}</span>
-            {active && <span className="h-1.5 w-1.5 rounded-full bg-beacon beacon-glow" aria-hidden />}
+            <Icon className="h-4 w-4 shrink-0" aria-hidden />
+            {!compact && <span className="truncate">{s.label}</span>}
           </Link>
         );
       })}
-      <Link
-        to="/mapping"
-        onClick={() => setOpen(false)}
-        className={cn("mt-4 rounded-lg px-3 py-2 text-xs", path === "/mapping" ? "text-foreground" : "text-muted-foreground hover:text-foreground")}
-      >
-        Data mapping report
-      </Link>
     </nav>
   );
 
   return (
-    <div className="min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-border bg-panel-strong p-5 backdrop-blur lg:flex">
-        <Brand />
-        <div className="mt-8 flex-1 overflow-y-auto">{nav}</div>
-        <SiloGuide section={current?.label ?? "Mapping"} />
+    <div className="min-h-screen overflow-x-hidden">
+      <aside
+        className={cn(
+          "fixed inset-y-0 left-0 z-30 hidden flex-col border-r border-border bg-panel-strong py-4 transition-[width] duration-200 lg:flex",
+          collapsed ? "w-16 px-2" : "w-60 px-3",
+        )}
+      >
+        <div className={cn("flex items-center", collapsed ? "justify-center" : "justify-between px-1")}>
+          {!collapsed && <Brand />}
+          <button
+            onClick={toggleCollapsed}
+            className="rounded-md p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+            aria-label={collapsed ? "Expand navigation" : "Collapse navigation"}
+            title={collapsed ? "Expand navigation" : "Collapse navigation"}
+          >
+            {collapsed ? <PanelLeftOpen className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
+          </button>
+        </div>
+        <div className="mt-6 flex-1 overflow-y-auto">{nav(collapsed)}</div>
       </aside>
 
-      <header className="sticky top-0 z-20 flex items-center gap-3 border-b border-border bg-panel-strong/90 px-4 py-3 backdrop-blur lg:ml-64 lg:px-8">
-        <button className="rounded-md p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Open navigation">
-          <Menu className="h-5 w-5" />
-        </button>
-        <ol className="flex items-center gap-2 text-sm" aria-label="Breadcrumb">
-          <li className="meta hidden sm:block">SiloVerse</li>
-          <li className="meta hidden sm:block" aria-hidden>/</li>
-          <li><Link to="/" className="text-muted-foreground hover:text-foreground">About Consilio</Link></li>
-          {current && current.to !== "/" && (
-            <>
-              <li className="text-muted-foreground" aria-hidden>/</li>
-              <li className="text-foreground" aria-current="page">{current.label}</li>
-            </>
-          )}
-          {path === "/mapping" && (
-            <>
-              <li className="text-muted-foreground" aria-hidden>/</li>
-              <li className="text-foreground">Data mapping</li>
-            </>
-          )}
-        </ol>
-        <button
-          onClick={toggle}
-          className="ml-auto inline-flex items-center gap-2 rounded-full border border-input px-3 py-1.5 text-xs text-foreground hover:border-beacon"
-          aria-label={`Switch to ${theme === "og" ? "SiloVerse Light" : "OG SiloVerse"} theme`}
-        >
-          {theme === "og" ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
-          {theme === "og" ? "SiloVerse Light" : "OG SiloVerse"}
-        </button>
-      </header>
+      <div className={cn("transition-[margin] duration-200", collapsed ? "lg:ml-16" : "lg:ml-60")}>
+        <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b border-border bg-panel-strong px-4 backdrop-blur lg:px-8">
+          <button className="-ml-2 rounded-md p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Open navigation">
+            <Menu className="h-5 w-5" />
+          </button>
+          <span className="lg:hidden"><Brand /></span>
+          <ol className="hidden min-w-0 items-center gap-1.5 text-sm sm:flex" aria-label="Breadcrumb">
+            <li><Link to="/" className={cn(path === "/" ? "font-medium text-foreground" : "text-muted-foreground hover:text-foreground")}>Consilio</Link></li>
+            {current && current.to !== "/" && (
+              <>
+                <li aria-hidden><ChevronRight className="h-3.5 w-3.5 text-muted-foreground" /></li>
+                <li className="truncate font-medium text-foreground" aria-current="page">{current.label}</li>
+              </>
+            )}
+          </ol>
+          <button
+            onClick={toggle}
+            className="ml-auto inline-flex h-9 items-center gap-2 rounded-lg border border-input px-3 text-xs font-medium text-foreground hover:bg-muted"
+            aria-label={`Switch to ${theme === "og" ? "light" : "dark"} theme`}
+          >
+            {theme === "og" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            <span className="hidden sm:inline">{theme === "og" ? "Light" : "Dark"}</span>
+          </button>
+        </header>
+
+        <main className="px-4 py-6 lg:px-8 lg:py-8">{children}</main>
+      </div>
 
       {open && (
         <div className="fixed inset-0 z-40 lg:hidden">
-          <button className="absolute inset-0 bg-background/70" aria-label="Close navigation" onClick={() => setOpen(false)} />
-          <div className="relative h-full w-72 bg-panel-strong p-5">
+          <button className="absolute inset-0 bg-background/70 backdrop-blur-sm" aria-label="Close navigation" onClick={() => setOpen(false)} />
+          <div className="relative h-full w-72 max-w-[85vw] bg-panel-strong p-4 shadow-2xl animate-rise">
             <div className="flex items-center justify-between">
               <Brand />
-              <button onClick={() => setOpen(false)} aria-label="Close navigation"><X className="h-5 w-5" /></button>
+              <button className="rounded-md p-2" onClick={() => setOpen(false)} aria-label="Close navigation"><X className="h-5 w-5" /></button>
             </div>
-            <div className="mt-8">{nav}</div>
+            <div className="mt-6">{nav(false)}</div>
           </div>
         </div>
       )}
-
-      <main className="px-4 py-8 lg:ml-64 lg:px-10 lg:py-10">{children}</main>
-      <footer className="px-4 pb-8 text-xs text-muted-foreground lg:ml-64 lg:px-10">
-        Prototype content is sourced from the provided Consilio workbook and is not live-connected to the database.
-      </footer>
     </div>
   );
 }
 
 function Brand() {
   return (
-    <Link to="/" className="flex items-center gap-3">
-      <span className="relative flex h-8 w-8 items-center justify-center">
-        <span className="absolute inset-0 rounded-full border border-beacon/50" />
-        <span className="h-2 w-2 rounded-full bg-beacon beacon-glow animate-pulse-soft" />
-      </span>
-      <span>
-        <span className="display block text-lg leading-none">SiloVerse</span>
-        <span className="meta">World 01 · Origin</span>
-      </span>
+    <Link to="/" className="flex items-center gap-2.5">
+      <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-beacon text-xs font-bold text-primary-foreground">C</span>
+      <span className="text-sm font-semibold text-foreground">Consilio</span>
     </Link>
   );
 }
