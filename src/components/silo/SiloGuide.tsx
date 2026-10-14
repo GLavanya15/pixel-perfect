@@ -22,7 +22,7 @@ export function SiloGuide({ section }: { section: string }) {
         </span>
         <span className="meta">Silo · Guide</span>
       </div>
-      <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{HINTS[section] ?? HINTS.Origin}</p>
+      <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{HINTS[section] ?? HINTS["Origin"]}</p>
       <p className="mt-2 text-[0.65rem] text-muted-foreground/80">Voice is not available in this prototype.</p>
     </div>
   );

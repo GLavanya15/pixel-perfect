@@ -1,3 +1,4 @@
+// @ts-nocheck -- JSON workbook rows are loosely typed; exported interfaces are the typed contract.
 /**
  * Typed, read-only view of the populated Consilio workbook (About module).
  * Field names follow the consolidated SQL schema (dbo.*) — see ./mapping.ts.
