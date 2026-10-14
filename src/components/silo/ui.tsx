@@ -11,7 +11,7 @@ const STATUS: Record<VerificationStatusName, { icon: typeof CheckCircle2; cls: s
 };
 
 /** Verification badge — icon + text label, never colour alone. */
-export function StatusBadge({ status, className }: { status?: VerificationStatusName; className?: string }) {
+export function StatusBadge({ status, className }: { status?: VerificationStatusName | undefined; className?: string  | undefined}) {
   if (!status) return null;
   const s = STATUS[status];
   const Icon = s.icon;
@@ -23,7 +23,7 @@ export function StatusBadge({ status, className }: { status?: VerificationStatus
   );
 }
 
-export function Tag({ children, tone = "default" }: { children: ReactNode; tone?: "default" | "beacon" | "warn" }) {
+export function Tag({ children, tone = "default" }: { children: ReactNode; tone?: "default" | "beacon" | "warn"  | undefined}) {
   return (
     <span
       className={cn(
@@ -38,7 +38,7 @@ export function Tag({ children, tone = "default" }: { children: ReactNode; tone?
   );
 }
 
-export function SectionHeader({ code, title, statement, children }: { code: string; title: string; statement?: string; children?: ReactNode }) {
+export function SectionHeader({ code, title, statement, children }: { code: string; title: string; statement?: string | undefined; children?: ReactNode  | undefined}) {
   return (
     <header className="mb-8 animate-rise">
       <p className="meta">About Consilio · Sector {code}</p>
@@ -49,7 +49,7 @@ export function SectionHeader({ code, title, statement, children }: { code: stri
   );
 }
 
-export function Field({ label, value, children }: { label: string; value?: ReactNode; children?: ReactNode }) {
+export function Field({ label, value, children }: { label: string; value?: ReactNode | undefined; children?: ReactNode  | undefined}) {
   const v = children ?? value;
   if (v === undefined || v === null || v === "") return null;
   return (
@@ -87,7 +87,7 @@ export function EvidenceBlock({ e }: { e: Evidence }) {
 }
 
 /** Accessible slide-over detail panel. */
-export function DetailPanel({ open, onClose, title, kicker, children }: { open: boolean; onClose: () => void; title?: string; kicker?: string; children: ReactNode }) {
+export function DetailPanel({ open, onClose, title, kicker, children }: { open: boolean; onClose: () => void; title?: string | undefined; kicker?: string | undefined; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (!open) return;
