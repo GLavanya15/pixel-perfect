@@ -1,0 +1,2365 @@
+{
+"CompanyProfile": [
+{
+"CompanyProfileID": 1,
+"LegalName": "Consilio LLC",
+"BrandName": "Consilio",
+"FormerName": "First Advantage Litigation Consulting",
+"ShortDescription": "Legal technology and enterprise legal services provider focused on eDiscovery, document review, investigations, and related legal solutions.",
+"OverviewText": "Consilio states that it provides end-to-end eDiscovery, legal technology solutions, document review, investigations, legal talent and enterprise legal services. Founded in 2000 as First Advantage Litigation Consulting and renamed Consilio in 2013. The supplied profile identifies Washington, DC as headquarters. Current ownership and legal registration details remain to be confirmed.",
+"FoundedYear": 2000,
+"BrandNameChangeYear": 2013,
+"WebsiteURL": "https://www.consilio.com",
+"CompanyType": "Private company",
+"Industry": "Legal technology; eDiscovery; enterprise legal services",
+"HeadquartersAddress": "1828 L Street NW, Suite 1070, Washington, DC 20036, United States",
+"HeadquartersAddressVerificationStatusID": 1,
+"HeadquartersAddressSourceID": 1,
+"OwnershipSummary": "Privately held. The supplied profile records a 20 April 2021 agreement for GI Partners to sell Consilio to funds managed by Stone Point Capital; closing and current ownership were not confirmed in the reviewed source set. Do not treat the planned Xact Data Discovery combination as completed without confirmation.",
+"ProfileStatus": "Draft",
+"LastReviewedDate": "2026-10-09",
+"SourceID": 2
+}
+],
+"CompanyMetric": [
+{
+"CompanyMetricID": 1,
+"CompanyProfileID": 1,
+"MetricName": "Employee count",
+"MetricValue": 5400,
+"ValueQualifierID": 1,
+"Unit": "employees",
+"PeriodTypeID": "PT003",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Consilio eDiscovery page states 5,400+ employees worldwide; reporting date and employee/contractor scope not provided.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 2,
+"CompanyProfileID": 1,
+"MetricName": "Matters hosted",
+"MetricValue": 30000,
+"ValueQualifierID": 1,
+"Unit": "matters",
+"PeriodTypeID": "PT004",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Source wording says currently hosted; metric date and exact active/lifetime definition not stated.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 3,
+"CompanyProfileID": 1,
+"MetricName": "Data ingested",
+"MetricValue": 210,
+"ValueQualifierID": 1,
+"Unit": "terabytes per month",
+"PeriodTypeID": "PT005",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Consilio eDiscovery page displays 210+ terabytes ingested monthly; supplied profile notes the page wording may show 210 without plus.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 4,
+"CompanyProfileID": 1,
+"MetricName": "Annual exports/productions",
+"MetricValue": 15000,
+"ValueQualifierID": 1,
+"Unit": "exports and productions per year",
+"PeriodTypeID": "PT001",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Consilio eDiscovery page displays 15K annually; the supplied profile also records 15,000+ in a PDF.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 5,
+"CompanyProfileID": 1,
+"MetricName": "Productions delivered",
+"MetricValue": 1300,
+"ValueQualifierID": 2,
+"Unit": "productions per month",
+"PeriodTypeID": "PT005",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Monthly figure appears in supplied profile text; confirm against current official metric page.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 6,
+"CompanyProfileID": 1,
+"MetricName": "Documents reviewed",
+"MetricValue": 2000000000,
+"ValueQualifierID": 1,
+"Unit": "documents per year",
+"PeriodTypeID": "PT001",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile states 2+ billion documents reviewed annually; not shown in the current eDiscovery metrics block.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 7,
+"CompanyProfileID": 1,
+"MetricName": "Review professionals",
+"MetricValue": 4000,
+"ValueQualifierID": 1,
+"Unit": "active review professionals",
+"PeriodTypeID": "PT004",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Consilio eDiscovery page states 4,000+ active review professionals.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 8,
+"CompanyProfileID": 1,
+"MetricName": "Data centers",
+"MetricValue": 15,
+"ValueQualifierID": 3,
+"Unit": "data centers",
+"PeriodTypeID": "PT003",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile states 15 data centers worldwide; metric reporting date not stated.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 9,
+"CompanyProfileID": 1,
+"MetricName": "Countries with staffed review professionals",
+"MetricValue": 25,
+"ValueQualifierID": 1,
+"Unit": "countries",
+"PeriodTypeID": "PT003",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile states legal review staff are located in 25+ countries; country list is not published.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 10,
+"CompanyProfileID": 1,
+"MetricName": "Languages supported",
+"MetricValue": 31,
+"ValueQualifierID": 3,
+"Unit": "languages covered for review projects",
+"PeriodTypeID": "PT004",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Consilio eDiscovery page states 31 languages covered for review projects; individual language names not supplied.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 11,
+"CompanyProfileID": 1,
+"MetricName": "Engineers/technologists",
+"MetricValue": 100,
+"ValueQualifierID": 1,
+"Unit": "software and database engineers",
+"PeriodTypeID": "PT003",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile cites 100+ software and database engineers on staff.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 12,
+"CompanyProfileID": 1,
+"MetricName": "Other",
+"MetricValue": 50000,
+"ValueQualifierID": 1,
+"Unit": "financial services engagements",
+"PeriodTypeID": "PT006",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile reports 50,000+ engagements for financial-services clients in an executive biography; date and definition not stated.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 13,
+"CompanyProfileID": 1,
+"MetricName": "Review centers",
+"MetricValue": 19,
+"ValueQualifierID": 3,
+"Unit": "review centers",
+"PeriodTypeID": "PT007",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile cites 19 review centers, 2,400 workstations and 80 review managers worldwide in a staff biography.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMetricID": 14,
+"CompanyProfileID": 1,
+"MetricName": "Workstations",
+"MetricValue": 2400,
+"ValueQualifierID": 3,
+"Unit": "review workstations",
+"PeriodTypeID": "PT007",
+"GeographicScopeID": 1,
+"IsEstimate": false,
+"MethodologyNote": "Supplied profile cites 2,400 workstations worldwide in a staff biography.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"CompanyFinancial": [
+{
+"CompanyFinancialID": 1,
+"CompanyProfileID": 1,
+"FinancialMetricID": 1,
+"FiscalYear": 2023,
+"Amount": 1200000000,
+"CurrencyID": "CI005",
+"ValueBasisID": 1,
+"ScopeNote": "Annual revenue estimate within the stated approximate range of USD 1.2B–1.3B.",
+"FinancialClassificationID": 1,
+"VerificationStatusID": 3
+},
+{
+"CompanyFinancialID": 2,
+"CompanyProfileID": 1,
+"FinancialMetricID": 1,
+"FiscalYear": 2024,
+"Amount": 1250000000,
+"CurrencyID": "CI005",
+"ValueBasisID": 1,
+"ScopeNote": "Annual revenue estimate within the stated approximate range of USD 1.2B–1.3B.",
+"FinancialClassificationID": 1,
+"VerificationStatusID": 3
+},
+{
+"CompanyFinancialID": 3,
+"CompanyProfileID": 1,
+"FinancialMetricID": 1,
+"FiscalYear": 2025,
+"Amount": 1300000000,
+"CurrencyID": "CI005",
+"ValueBasisID": 1,
+"ScopeNote": "Annual revenue estimate within the stated approximate range of USD 1.2B–1.3B.",
+"FinancialClassificationID": 1,
+"VerificationStatusID": 3
+}
+],
+"Leader": [
+{
+"LeaderID": 1,
+"CompanyProfileID": 1,
+"FullName": "Andy Macdonald",
+"JobTitleID": 1,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 1,
+"DepartmentID": 1,
+"BioSummary": "Executive leadership; strategic and operational initiatives.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 2,
+"CompanyProfileID": 1,
+"FullName": "Meredith Kildow",
+"JobTitleID": 2,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 2,
+"DepartmentID": 1,
+"BioSummary": "Commercial business lines including revenue, account management and delivery.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 3,
+"CompanyProfileID": 1,
+"FullName": "Raj Chandrasekar",
+"JobTitleID": 3,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 3,
+"DepartmentID": 1,
+"BioSummary": "Engineering, infrastructure, security, product management, business intelligence and corporate services.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 4,
+"CompanyProfileID": 1,
+"FullName": "John Hale",
+"JobTitleID": 4,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 4,
+"DepartmentID": 1,
+"BioSummary": "Marketing leadership.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 5,
+"CompanyProfileID": 1,
+"FullName": "Todd Herndon",
+"JobTitleID": 5,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 5,
+"DepartmentID": 1,
+"BioSummary": "Finance leadership.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 6,
+"CompanyProfileID": 1,
+"FullName": "Tricia Kinney",
+"JobTitleID": 6,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 6,
+"DepartmentID": 1,
+"BioSummary": "Legal, compliance and governance.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 7,
+"CompanyProfileID": 1,
+"FullName": "Brandyn Payne",
+"JobTitleID": 7,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 7,
+"DepartmentID": 1,
+"BioSummary": "People, culture and talent.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 8,
+"CompanyProfileID": 1,
+"FullName": "Adam Pollitt",
+"JobTitleID": 8,
+"LeaderLevelID": 1,
+"LeadershipFunctionID": 3,
+"DepartmentID": 1,
+"BioSummary": "Information technology; biography not shown in supplied profile.",
+"ProfileURL": "https://www.consilio.com/about-consilio/executive-management",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 9,
+"CompanyProfileID": 1,
+"FullName": "Drew Macaulay",
+"JobTitleID": 9,
+"LeaderLevelID": 2,
+"LeadershipFunctionID": 8,
+"DepartmentID": 1,
+"BioSummary": "Described as Managing Director, APAC & EMEA in a release; responsible for UK offices.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 10,
+"CompanyProfileID": 1,
+"FullName": "Carolyn Anger",
+"JobTitleID": 10,
+"LeaderLevelID": 3,
+"LeadershipFunctionID": 8,
+"DepartmentID": 1,
+"BioSummary": "Canada leadership.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 11,
+"CompanyProfileID": 1,
+"FullName": "Peter Ostrega",
+"JobTitleID": 9,
+"LeaderLevelID": 4,
+"LeadershipFunctionID": 9,
+"DepartmentID": 1,
+"BioSummary": "Leads the Financial Services vertical.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 12,
+"CompanyProfileID": 1,
+"FullName": "Patty Wise",
+"JobTitleID": 9,
+"LeaderLevelID": 4,
+"LeadershipFunctionID": 10,
+"DepartmentID": 1,
+"BioSummary": "Executive oversight of the flexible talent business unit.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 13,
+"CompanyProfileID": 1,
+"FullName": "Maureen O'Neill",
+"JobTitleID": 11,
+"LeaderLevelID": 2,
+"LeadershipFunctionID": 11,
+"DepartmentID": 1,
+"BioSummary": "Also identified as Diversity, Equity & Inclusion Officer.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 14,
+"CompanyProfileID": 1,
+"FullName": "Michael Pontrelli",
+"JobTitleID": 12,
+"LeaderLevelID": 4,
+"LeadershipFunctionID": 11,
+"DepartmentID": 1,
+"BioSummary": "Global strategic client experience.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 15,
+"CompanyProfileID": 1,
+"FullName": "James Jansen",
+"JobTitleID": 13,
+"LeaderLevelID": 4,
+"LeadershipFunctionID": 12,
+"DepartmentID": 1,
+"BioSummary": "Cyber incident response.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 16,
+"CompanyProfileID": 1,
+"FullName": "Xavier Diokno",
+"JobTitleID": 11,
+"LeaderLevelID": 2,
+"LeadershipFunctionID": 3,
+"DepartmentID": 1,
+"BioSummary": "Innovation initiatives including AI research.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LeaderID": 17,
+"CompanyProfileID": 1,
+"FullName": "Lindsay Cox",
+"JobTitleID": 14,
+"LeaderLevelID": 4,
+"LeadershipFunctionID": 13,
+"DepartmentID": 1,
+"BioSummary": "Leads the global managed review solutions team.",
+"ProfileURL": "https://www.consilio.com/about",
+"IsCurrent": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"CompanyMilestone": [
+{
+"CompanyMilestoneID": 1,
+"CompanyProfileID": 1,
+"EventTitle": "Founded as First Advantage Litigation Consulting",
+"EventTypeID": 1,
+"TransactionTypeID": 1,
+"EventStatusID": 1,
+"AcquiredScope": "Company founding",
+"BusinessDescription": "Company began with forensics consulting for multinational corporate clients handling large volumes of electronic data.",
+"StrategicRationale": "Origin of Consilio.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 2,
+"CompanyProfileID": 1,
+"EventTitle": "True Data Partners technology / multilingual processing capability",
+"EventTypeID": 2,
+"TransactionTypeID": 2,
+"CounterpartyName": "True Data Partners",
+"EventStatusID": 2,
+"AcquiredScope": "Technology / multilingual document processing software",
+"BusinessDescription": "Supplied profile associates True Data Partners with multilingual document processing software and the launch of global RPM review platform and secure data hosting in late 2005.",
+"StrategicRationale": "Moved the business into data processing and eDiscovery services.",
+"CountAsAcquisition": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 3,
+"CompanyProfileID": 1,
+"EventTitle": "International expansion and India operations team",
+"EventTypeID": 3,
+"TransactionTypeID": 1,
+"EventStatusID": 1,
+"AcquiredScope": "New offices and operations, including an India-based operations team",
+"BusinessDescription": "Supplied profile describes offices and operations created in Europe and Asia during 2006–2010; exact opening dates not provided.",
+"StrategicRationale": "Follow-the-sun support for global clients.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 4,
+"CompanyProfileID": 1,
+"EventTitle": "DLR Legal transaction (secondary-source reference)",
+"EventTypeID": 2,
+"TransactionTypeID": 2,
+"CounterpartyName": "DLR Legal",
+"EventStatusID": 2,
+"AcquiredScope": "Scope not confirmed",
+"BusinessDescription": "Mentioned in earlier acquisition timeline as secondary-source/unverified; target scope and exact date require confirmation.",
+"CountAsAcquisition": true,
+"VerificationStatusID": 3,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 5,
+"CompanyProfileID": 1,
+"EventTitle": "Rename from First Advantage Litigation Consulting to Consilio",
+"EventTypeID": 4,
+"TransactionTypeID": 1,
+"EventStatusID": 1,
+"AcquiredScope": "Company name/brand",
+"BusinessDescription": "Company renamed Consilio in 2013.",
+"StrategicRationale": "Brand change.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 6,
+"CompanyProfileID": 1,
+"EventTitle": "Backstop LLP acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 2,
+"CounterpartyName": "Backstop LLP",
+"EventStatusID": 1,
+"AcquiredScope": "Predictive coding software business",
+"BusinessDescription": "Supplied profile says Backstop LLP was added after Consilio separated from First Advantage in 2015; exact closing date not stated.",
+"StrategicRationale": "Added predictive coding technology.",
+"CountAsAcquisition": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 7,
+"CompanyProfileID": 1,
+"EventTitle": "Proven Legal Technologies acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "Proven Legal Technologies",
+"EventStatusID": 1,
+"AcquiredScope": "UK eDisclosure and forensic-consulting provider",
+"BusinessDescription": "Consilio announced it had acquired the UK-based provider on 2 December 2015.",
+"StrategicRationale": "Deepened European eDisclosure/forensics resources and added Relativity hosting capability.",
+"AcquiredYear": 2015,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 8,
+"CompanyProfileID": 1,
+"EventTitle": "Huron Legal practice acquisition",
+"EventTypeID": 5,
+"TransactionTypeID": 4,
+"CounterpartyName": "Huron Consulting Group",
+"EventStatusID": 1,
+"AcquiredScope": "Huron Legal practice, not the entire Huron Consulting Group",
+"BusinessDescription": "Completed acquisition of Huron Legal practice; services included eDiscovery, document review, information governance and compliance, law department management and legal analytics.",
+"StrategicRationale": "Expanded scale, consulting capabilities and international reach.",
+"AcquiredYear": 2016,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 9,
+"CompanyProfileID": 1,
+"EventTitle": "Equivalent DATA / EQD transaction",
+"EventTypeID": 2,
+"TransactionTypeID": 2,
+"CounterpartyName": "Equivalent DATA (EQD)",
+"EventStatusID": 2,
+"AcquiredScope": "Scope and exact dates require confirmation",
+"BusinessDescription": "Included in the supplied profile and earlier chat timeline as an added business; transaction timing and scope require verification.",
+"StrategicRationale": "Technology and consulting capability expansion.",
+"CountAsAcquisition": true,
+"VerificationStatusID": 3,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 10,
+"CompanyProfileID": 1,
+"EventTitle": "Advanced Discovery combination",
+"EventTypeID": 6,
+"TransactionTypeID": 5,
+"CounterpartyName": "Advanced Discovery",
+"EventStatusID": 1,
+"AcquiredScope": "Combination of Consilio and Advanced Discovery",
+"BusinessDescription": "2018 combination; supplied profile cites the combined business as having 60+ offices and data centers in 11 countries and 2,500+ employees at that time. Exact closing date not stated in the supplied source.",
+"StrategicRationale": "Created a larger combined global eDiscovery and risk-management platform.",
+"AcquiredYear": 2018,
+"CountAsAcquisition": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 11,
+"CompanyProfileID": 1,
+"EventTitle": "DiscoverReady acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "DiscoverReady",
+"EventStatusID": 1,
+"AcquiredScope": "Legal consulting and services provider",
+"BusinessDescription": "Consilio’s About page states DiscoverReady was announced and acquired in October 2018; exact completion date not stated here.",
+"StrategicRationale": "Expanded geographic reach, technology innovation and client portfolio.",
+"AcquiredYear": 2018,
+"CountAsAcquisition": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 12,
+"CompanyProfileID": 1,
+"EventTitle": "GI Partners sale agreement with Stone Point Capital funds",
+"EventTypeID": 7,
+"TransactionTypeID": 6,
+"CounterpartyName": "Stone Point Capital funds",
+"EventStatusID": 3,
+"AcquiredScope": "Sale of Consilio by GI Partners to investment funds managed by Stone Point Capital",
+"BusinessDescription": "Definitive agreement signed on 20 April 2021; supplied profile says closing was expected in May 2021 but completion was not confirmed in reviewed sources.",
+"StrategicRationale": "Ownership change; planned combination with Xact Data Discovery was announced alongside the agreement.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 13,
+"CompanyProfileID": 1,
+"EventTitle": "Planned combination with Xact Data Discovery",
+"EventTypeID": 8,
+"TransactionTypeID": 7,
+"CounterpartyName": "Xact Data Discovery / Aquiline Capital Partners",
+"EventStatusID": 4,
+"AcquiredScope": "Proposed combination of Xact Data Discovery with Consilio",
+"BusinessDescription": "Announcement described an intended combination; supplied profile did not confirm completion.",
+"StrategicRationale": "Intended to create a larger global eDiscovery platform.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 14,
+"CompanyProfileID": 1,
+"EventTitle": "Special Counsel D4 and EQ legal solutions business units",
+"EventTypeID": 5,
+"TransactionTypeID": 4,
+"CounterpartyName": "The Adecco Group / Special Counsel",
+"EventStatusID": 1,
+"AcquiredScope": "Legal consulting and eDiscovery business units (D4 and EQ); legal staffing and permanent placement units excluded",
+"BusinessDescription": "Consilio completed the acquisition on 19 October 2021.",
+"StrategicRationale": "Expanded document review, legal process outsourcing and cyber incident response resources.",
+"AcquiredYear": 2021,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 15,
+"CompanyProfileID": 1,
+"EventTitle": "Legility acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "Legility",
+"EventStatusID": 1,
+"AcquiredScope": "Legal services provider with managed review, flexible legal talent, enterprise legal solutions, eDiscovery and investigation/litigation support",
+"BusinessDescription": "Consilio announced the acquisition closed on 14 December 2021.",
+"StrategicRationale": "Broadened enterprise legal services and flexible legal talent capabilities.",
+"AcquiredYear": 2021,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 16,
+"CompanyProfileID": 1,
+"EventTitle": "Launch of Complete Enterprise",
+"EventTypeID": 9,
+"TransactionTypeID": 1,
+"EventStatusID": 1,
+"AcquiredScope": "End-to-end suite of legal solutions and services",
+"BusinessDescription": "Launched in 2022 for corporate legal departments and law firms; supplied profile says it completed integration of acquired business units from the prior year.",
+"StrategicRationale": "Expanded advisory, talent, legal department operations, compliance and information governance solutions.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 17,
+"CompanyProfileID": 1,
+"EventTitle": "Lawyers On Demand (LOD) and SYKE acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "Lawyers On Demand; SYKE",
+"EventStatusID": 1,
+"AcquiredScope": "LOD flexible legal talent provider and SYKE UK-headquartered legal technology consultancy",
+"BusinessDescription": "Consilio announced closing on 5 September 2023.",
+"StrategicRationale": "Extended enterprise legal services across EMEA, Asia and Australia and expanded UK presence.",
+"AcquiredYear": 2023,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 18,
+"CompanyProfileID": 1,
+"EventTitle": "Integration of elaw (Australia)",
+"EventTypeID": 10,
+"TransactionTypeID": 2,
+"CounterpartyName": "elaw",
+"EventStatusID": 2,
+"AcquiredScope": "Australian eDiscovery provider; integration mentioned in supplied profile",
+"BusinessDescription": "Supplied profile states elaw was integrated; announcement and completion dates not found.",
+"StrategicRationale": "Part of Australian build-out.",
+"CountAsAcquisition": false,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 19,
+"CompanyProfileID": 1,
+"EventTitle": "TrueLaw acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "TrueLaw",
+"EventStatusID": 1,
+"AcquiredScope": "Legal AI research lab with Expert Legal Model and narrative AI",
+"BusinessDescription": "Consilio announced completion of the TrueLaw acquisition on 17 June 2025.",
+"StrategicRationale": "Strengthened AI investigations, narrative generation and legal language-model capabilities in Aurora.",
+"AcquiredYear": 2025,
+"CountAsAcquisition": true,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"CompanyMilestoneID": 20,
+"CompanyProfileID": 1,
+"EventTitle": "icourts acquisition",
+"EventTypeID": 2,
+"TransactionTypeID": 3,
+"CounterpartyName": "icourts",
+"EventStatusID": 1,
+"AcquiredScope": "Australian eDiscovery and electronic evidence management provider",
+"BusinessDescription": "Consilio announced its acquisition of icourts; exact announcement/closing date was not available in the supplied profile or source snippet reviewed.",
+"StrategicRationale": "Added local Australian capability, including support for Royal Commissions and large investigations.",
+"CountAsAcquisition": true,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"ServiceSolution": [
+{
+"ServiceSolutionID": 1,
+"CompanyProfileID": 1,
+"ServiceID": "S001",
+"ServiceCategoryID": "SC001",
+"OfferingTypeID": 1,
+"Description": "End-to-end eDiscovery from secure intake and chain of custody through processing, hosting, review and production.",
+"UseCases": "Investigations; litigation; secure data intake; processing; hosting; review; production.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 2,
+"CompanyProfileID": 1,
+"ServiceID": "S002",
+"ServiceCategoryID": "SC002",
+"OfferingTypeID": 2,
+"Description": "Officially named solution; the supplied profile does not provide a detailed standalone description.",
+"UseCases": "AI-assisted review and analytics capabilities are described elsewhere in Consilio’s technology materials.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 3,
+"CompanyProfileID": 1,
+"ServiceID": "S003",
+"ServiceCategoryID": "SC003",
+"OfferingTypeID": 3,
+"Description": "Managed document review delivered by review professionals and review centers.",
+"UseCases": "Document review for corporate and law firm matters.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 4,
+"CompanyProfileID": 1,
+"ServiceID": "S004",
+"ServiceCategoryID": "SC004",
+"OfferingTypeID": 1,
+"Description": "Technology, workflows and expertise to build compliance and investigation strategies, protect sensitive data and lower downstream cost.",
+"UseCases": "Compliance and investigation teams.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 5,
+"CompanyProfileID": 1,
+"ServiceID": "S005",
+"ServiceCategoryID": "SC005",
+"OfferingTypeID": 1,
+"Description": "Experts use advanced techniques to find sensitive data and notify individuals affected by a cyber incident.",
+"UseCases": "Response to cyber incidents and notification of affected individuals.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 6,
+"CompanyProfileID": 1,
+"ServiceID": "S006",
+"ServiceCategoryID": "SC006",
+"OfferingTypeID": 1,
+"Description": "Computer forensics investigation and data preservation services.",
+"UseCases": "Investigations and preservation needs.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 7,
+"CompanyProfileID": 1,
+"ServiceID": "S007",
+"ServiceCategoryID": "SC007",
+"OfferingTypeID": 1,
+"Description": "Flexible legal talent programs and enterprise talent solutions.",
+"UseCases": "In-house legal team resourcing.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"ServiceSolutionID": 8,
+"CompanyProfileID": 1,
+"ServiceID": "S008",
+"ServiceCategoryID": "SC008",
+"OfferingTypeID": 4,
+"Description": "Officially named service; detailed description was not available in the supplied profile.",
+"UseCases": "Legal transformation and advisory needs; specifics require confirmation.",
+"GeographicAvailability": "Global availability not itemized; company serves global clients",
+"DeliveryModel": "Not stated",
+"IsActive": true,
+"OfficialURL": "https://www.consilio.com/solutions/ediscovery-services",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"Location": [
+{
+"LocationID": 1,
+"CompanyProfileID": 1,
+"LocationName": "Consilio headquarters (as identified in supplied profile)",
+"LocationTypeID": 1,
+"City": "Washington",
+"StateProvince": "DC",
+"CountryID": "RC009",
+"RegionID": 2,
+"IsHeadquarters": true,
+"PublicListingStatusID": 1,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LocationID": 2,
+"CompanyProfileID": 1,
+"LocationName": "Dallas executive address (not confirmed as an office)",
+"LocationTypeID": 2,
+"AddressLine": "12801 N Central Expy #250",
+"City": "Dallas",
+"StateProvince": "Texas",
+"CountryID": "RC009",
+"RegionID": 2,
+"IsHeadquarters": false,
+"PublicListingStatusID": 2,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LocationID": 3,
+"CompanyProfileID": 1,
+"LocationName": "United Kingdom & Europe listed office",
+"LocationTypeID": 3,
+"AddressLine": "6th Floor, 24 Chiswell Street",
+"City": "London",
+"CountryID": "RC008",
+"RegionID": 3,
+"IsHeadquarters": false,
+"PublicListingStatusID": 2,
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LocationID": 4,
+"CompanyProfileID": 1,
+"LocationName": "Sydney data centre city (address not published)",
+"LocationTypeID": 4,
+"City": "Sydney",
+"StateProvince": "New South Wales",
+"CountryID": "RC001",
+"RegionID": 4,
+"IsHeadquarters": false,
+"PublicListingStatusID": 2,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LocationID": 5,
+"CompanyProfileID": 1,
+"LocationName": "Melbourne data centre city (address not published)",
+"LocationTypeID": 4,
+"City": "Melbourne",
+"StateProvince": "Victoria",
+"CountryID": "RC001",
+"RegionID": 4,
+"IsHeadquarters": false,
+"PublicListingStatusID": 2,
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"LocationID": 6,
+"CompanyProfileID": 1,
+"LocationName": "Washington, DC executive address (not confirmed as headquarters address)",
+"LocationTypeID": 2,
+"AddressLine": "1828 L St. NW, Suite 1070",
+"City": "Washington",
+"StateProvince": "DC",
+"CountryID": "RC009",
+"RegionID": 2,
+"IsHeadquarters": false,
+"PublicListingStatusID": 2,
+"VerificationStatusID": 1,
+"SourceID": 2,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"WorkforceMetric": [
+{
+"WorkforceMetricID": 1,
+"CompanyProfileID": 1,
+"PopulationType": "All employees",
+"CountValue": 5400,
+"ValueQualifierID": 1,
+"RegionID": 1,
+"MethodologyNote": "5,400+ employees worldwide on Consilio eDiscovery page. Reporting date and employee/contractor split not stated.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"WorkforceMetricID": 2,
+"CompanyProfileID": 1,
+"PopulationType": "Review professionals",
+"CountValue": 4000,
+"ValueQualifierID": 1,
+"BusinessFunction": "Document review",
+"RegionID": 1,
+"MethodologyNote": "4,000+ active review professionals; not necessarily a separate headcount from total employees.",
+"VerificationStatusID": 1,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"WorkforceMetricID": 3,
+"CompanyProfileID": 1,
+"PopulationType": "Engineers/technologists",
+"CountValue": 100,
+"ValueQualifierID": 1,
+"BusinessFunction": "Software and database engineering",
+"RegionID": 1,
+"MethodologyNote": "100+ software and database engineers on staff, as stated in supplied profile; date not stated.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"WorkforceMetricID": 4,
+"CompanyProfileID": 1,
+"PopulationType": "Lawyers",
+"CountValue": 35,
+"ValueQualifierID": 3,
+"BusinessFunction": "Analytics",
+"RegionID": 1,
+"MethodologyNote": "A vice president is quoted as describing a group of 35 lawyers and programmers dedicated to analytics. This is a mixed team, not a lawyer-only count.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"WorkforceMetricID": 5,
+"CompanyProfileID": 1,
+"PopulationType": "Flexible legal talent",
+"CountValue": 4500,
+"ValueQualifierID": 1,
+"BusinessFunction": "Lawyers On Demand",
+"RegionID": 3,
+"MethodologyNote": "Third-party deal database cited in supplied profile reports a 4,500+ practitioner community at LOD in 2023; acquired entity population and historical figure, not additive to current Consilio employee count.",
+"VerificationStatusID": 2,
+"SourceID": 4,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"LanguageCapability": [
+{
+"LanguageCapabilityID": 1,
+"LanguageID": 1,
+"ServiceSolutionID": 1,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Processing & language analysis: Primary Language Identification field identifies over two dozen languages including Chinese, Japanese and Korean (CJK). Cross-Border Expertise fact sheet (2021) also lists Chinese among multibyte languages processed. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 2,
+"LanguageID": 2,
+"ServiceSolutionID": 1,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Processing & language analysis (CJK language identification); Japanese-to-English machine translation given as the example language pair. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 3,
+"LanguageID": 3,
+"ServiceSolutionID": 1,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Processing & language analysis (CJK language identification). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 4,
+"LanguageID": 4,
+"ServiceSolutionID": 1,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Cross-Border Expertise fact sheet: processing of multibyte languages such as Russian, Arabic, Chinese, Japanese, Korean. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 7,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 5,
+"LanguageID": 5,
+"ServiceSolutionID": 1,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Cross-Border Expertise fact sheet: processing of multibyte languages such as Russian, Arabic, Chinese, Japanese, Korean. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 7,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 6,
+"LanguageID": 1,
+"ServiceSolutionID": 2,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Backstop predictive coding / TAR described as proven to work very well for CJK languages. Service mapping assumes the fact-sheet heading \"Analytics and TAR/Predictive Coding\" corresponds to the Analytics & AI service. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 7,
+"LanguageID": 2,
+"ServiceSolutionID": 2,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Backstop predictive coding / TAR proven for CJK languages (mapping assumption as above). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 8,
+"LanguageID": 3,
+"ServiceSolutionID": 2,
+"CapabilityTypeID": 2,
+"IsActive": true,
+"EvidenceNote": "Backstop predictive coding / TAR proven for CJK languages (mapping assumption as above). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 9,
+"LanguageID": 6,
+"ServiceSolutionID": 2,
+"CapabilityTypeID": 2,
+"EvidenceNote": "Case spotlight: Backstop modelled mixed-language data including Portuguese in one predictive-coding project. Project-based evidence, so active status not stated (mapping assumption as above). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 10,
+"LanguageID": 7,
+"ServiceSolutionID": 3,
+"CapabilityTypeID": 2,
+"EvidenceNote": "Case study titled \"Cross-Matter Custodian Spanish Language Document Review\"; shows a Spanish-language managed review project. General Spanish review capability inferred from the case study only. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 2,
+"SourceID": 8,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 11,
+"LanguageID": 8,
+"ServiceSolutionID": 3,
+"CapabilityTypeID": 1,
+"IsActive": true,
+"EvidenceNote": "Fact sheet: staffing experts secure native-speaker reviewers for scores of languages, \"from Serbo-Croatian to Mandarin\"; bilingual and trilingual reviewers also supplied. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 12,
+"LanguageID": 9,
+"ServiceSolutionID": 3,
+"CapabilityTypeID": 1,
+"IsActive": true,
+"EvidenceNote": "Fact sheet: native-speaker reviewers available from Serbo-Croatian to Mandarin. Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 13,
+"LanguageID": 10,
+"ServiceSolutionID": 3,
+"CapabilityTypeID": 1,
+"GeographicScopeID": 15,
+"ProfessionalCount": 20,
+"EvidenceNote": "Case spotlight: Serbian project manager and 20 Serbian attorneys staffed an on-demand review centre in Serbia (project-based; 20 is the count for that project). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 6,
+"LastVerifiedDate": "2026-10-13"
+},
+{
+"LanguageCapabilityID": 14,
+"LanguageID": 2,
+"ServiceSolutionID": 3,
+"CapabilityTypeID": 1,
+"EvidenceNote": "Case study: Los Angeles-based team of bilingual review attorneys with deep Japanese document-review experience, screened for Japanese language literacy (project-based). Source document dated 2021-2022; current availability not re-confirmed.",
+"VerificationStatusID": 1,
+"SourceID": 9,
+"LastVerifiedDate": "2026-10-13"
+}
+],
+"Award": [
+{
+"AwardID": 1,
+"CompanyProfileID": 1,
+"AwardName": "Comparably award for employee experience (title to confirm)",
+"AwardingBody": "Comparably",
+"AwardYear": 2026,
+"AwardCategory": "Employee experience",
+"Description": "Supplied profile reports two 2026 Comparably awards for employee experience; exact award titles require confirmation.",
+"AwardStatus": "Winner",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"AwardID": 2,
+"CompanyProfileID": 1,
+"AwardName": "Comparably Best Career Growth",
+"AwardingBody": "Comparably",
+"AwardCategory": "Career growth",
+"Description": "Supplied profile mentions a Comparably award for Best Career Growth; year/title details require confirmation.",
+"AwardStatus": "Winner",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"AwardID": 3,
+"CompanyProfileID": 1,
+"AwardName": "Insurance Consulting Team of the Year",
+"AwardingBody": "Business Insurance",
+"AwardYear": 2021,
+"AwardCategory": "Insurance consulting",
+"Description": "Supplied profile lists Consilio as a finalist.",
+"AwardStatus": "Finalist",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"ServiceSolutionMarketSegment": [
+{
+"ServiceSolutionID": 1,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 1,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 2,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 2,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 3,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 3,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 4,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 4,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 5,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 5,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 6,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 6,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 7,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 7,
+"MarketSegmentID": 8
+},
+{
+"ServiceSolutionID": 8,
+"MarketSegmentID": 7
+},
+{
+"ServiceSolutionID": 8,
+"MarketSegmentID": 8
+}
+],
+"MarketSegmentDomain": [
+{
+"MarketSegmentID": 1,
+"DomainID": "D003"
+},
+{
+"MarketSegmentID": 2,
+"DomainID": "D002"
+},
+{
+"MarketSegmentID": 2,
+"DomainID": "D004"
+},
+{
+"MarketSegmentID": 5,
+"DomainID": "D005"
+},
+{
+"MarketSegmentID": 6,
+"DomainID": "D001"
+},
+{
+"MarketSegmentID": 7,
+"DomainID": "D006"
+}
+],
+"MilestoneGeographicScope": [
+{
+"CompanyMilestoneID": 1,
+"GeographicScopeID": 2
+},
+{
+"CompanyMilestoneID": 3,
+"GeographicScopeID": 3
+},
+{
+"CompanyMilestoneID": 3,
+"GeographicScopeID": 4
+},
+{
+"CompanyMilestoneID": 3,
+"GeographicScopeID": 5
+},
+{
+"CompanyMilestoneID": 7,
+"GeographicScopeID": 6
+},
+{
+"CompanyMilestoneID": 7,
+"GeographicScopeID": 3
+},
+{
+"CompanyMilestoneID": 8,
+"GeographicScopeID": 7
+},
+{
+"CompanyMilestoneID": 8,
+"GeographicScopeID": 3
+},
+{
+"CompanyMilestoneID": 8,
+"GeographicScopeID": 4
+},
+{
+"CompanyMilestoneID": 10,
+"GeographicScopeID": 8
+},
+{
+"CompanyMilestoneID": 12,
+"GeographicScopeID": 1
+},
+{
+"CompanyMilestoneID": 13,
+"GeographicScopeID": 9
+},
+{
+"CompanyMilestoneID": 14,
+"GeographicScopeID": 2
+},
+{
+"CompanyMilestoneID": 14,
+"GeographicScopeID": 10
+},
+{
+"CompanyMilestoneID": 15,
+"GeographicScopeID": 1
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 3
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 11
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 12
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 4
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 13
+},
+{
+"CompanyMilestoneID": 17,
+"GeographicScopeID": 6
+},
+{
+"CompanyMilestoneID": 18,
+"GeographicScopeID": 13
+},
+{
+"CompanyMilestoneID": 19,
+"GeographicScopeID": 2
+},
+{
+"CompanyMilestoneID": 19,
+"GeographicScopeID": 14
+},
+{
+"CompanyMilestoneID": 20,
+"GeographicScopeID": 13
+}
+],
+"CapabilityType": [
+{
+"CapabilityTypeID": 1,
+"CapabilityTypeName": "Employee or reviewer language fluency",
+"Description": "Language spoken by Consilio employees or staffed review professionals."
+},
+{
+"CapabilityTypeID": 2,
+"CapabilityTypeName": "Service-supported language",
+"Description": "Language that a specific Consilio service can process, analyse, translate or review."
+},
+{
+"CapabilityTypeID": 3,
+"CapabilityTypeName": "Organization-offered language",
+"Description": "Language offered at organisation level and not tied to one service (no itemised languages published yet)."
+}
+],
+"Country": [
+{
+"CountryID": "RC009",
+"CountryName": "United States",
+"CountryCode": "US"
+},
+{
+"CountryID": "RC008",
+"CountryName": "United Kingdom",
+"CountryCode": "GB"
+},
+{
+"CountryID": "RC001",
+"CountryName": "Australia",
+"CountryCode": "AU"
+}
+],
+"Currency": [
+{
+"CurrencyID": "CI001",
+"CurrencyCode": "CHF"
+},
+{
+"CurrencyID": "CI002",
+"CurrencyCode": "EUR"
+},
+{
+"CurrencyID": "CI003",
+"CurrencyCode": "GBP"
+},
+{
+"CurrencyID": "CI004",
+"CurrencyCode": "SEK"
+},
+{
+"CurrencyID": "CI005",
+"CurrencyCode": "USD"
+}
+],
+"Department": [
+{
+"DepartmentID": 1,
+"DepartmentName": "Not Available",
+"Description": "Source department values were blank for all leaders; placeholder until verified data is available."
+}
+],
+"Domain": [
+{
+"DomainID": "D001",
+"DomainName": "Technology / IT",
+"Description": "Technology and information technology companies",
+"IsActive": true
+},
+{
+"DomainID": "D002",
+"DomainName": "Pharmaceutical / Pharma",
+"Description": "Pharmaceutical and drug manufacturers",
+"IsActive": true
+},
+{
+"DomainID": "D003",
+"DomainName": "Financial Services",
+"Description": "Banking, payments, investment and financial institutions",
+"IsActive": true
+},
+{
+"DomainID": "D004",
+"DomainName": "Life Sciences & Healthcare",
+"Description": "Healthcare providers and life sciences organizations",
+"IsActive": true
+},
+{
+"DomainID": "D005",
+"DomainName": "Consumer Brands",
+"Description": "Consumer-facing products and brands",
+"IsActive": true
+},
+{
+"DomainID": "D006",
+"DomainName": "Law Firms",
+"Description": "Law firms and legal organizations",
+"IsActive": true
+}
+],
+"EventStatus": [
+{
+"EventStatusID": 1,
+"EventStatusName": "Completed"
+},
+{
+"EventStatusID": 2,
+"EventStatusName": "Unverified"
+},
+{
+"EventStatusID": 3,
+"EventStatusName": "Signed"
+},
+{
+"EventStatusID": 4,
+"EventStatusName": "Proposed"
+}
+],
+"EventType": [
+{
+"EventTypeID": 1,
+"EventTypeName": "Founding"
+},
+{
+"EventTypeID": 2,
+"EventTypeName": "Acquisition"
+},
+{
+"EventTypeID": 3,
+"EventTypeName": "Geographic expansion"
+},
+{
+"EventTypeID": 4,
+"EventTypeName": "Name change"
+},
+{
+"EventTypeID": 5,
+"EventTypeName": "Business-unit acquisition"
+},
+{
+"EventTypeID": 6,
+"EventTypeName": "Merger"
+},
+{
+"EventTypeID": 7,
+"EventTypeName": "Ownership change"
+},
+{
+"EventTypeID": 8,
+"EventTypeName": "Proposed transaction"
+},
+{
+"EventTypeID": 9,
+"EventTypeName": "Service/solution launch"
+},
+{
+"EventTypeID": 10,
+"EventTypeName": "Integration"
+}
+],
+"FinancialClassification": [
+{
+"FinancialClassificationID": 1,
+"ClassificationName": "Estimated"
+}
+],
+"FinancialMetric": [
+{
+"FinancialMetricID": 1,
+"FinancialMetricName": "Revenue"
+}
+],
+"GeographicScope": [
+{
+"GeographicScopeID": 1,
+"ScopeName": "Global"
+},
+{
+"GeographicScopeID": 2,
+"ScopeName": "United States"
+},
+{
+"GeographicScopeID": 3,
+"ScopeName": "Europe"
+},
+{
+"GeographicScopeID": 4,
+"ScopeName": "Asia"
+},
+{
+"GeographicScopeID": 5,
+"ScopeName": "India"
+},
+{
+"GeographicScopeID": 6,
+"ScopeName": "United Kingdom"
+},
+{
+"GeographicScopeID": 7,
+"ScopeName": "North America"
+},
+{
+"GeographicScopeID": 8,
+"ScopeName": "11 countries (2018)"
+},
+{
+"GeographicScopeID": 9,
+"ScopeName": "International"
+},
+{
+"GeographicScopeID": 10,
+"ScopeName": "International data operations"
+},
+{
+"GeographicScopeID": 11,
+"ScopeName": "Middle East"
+},
+{
+"GeographicScopeID": 12,
+"ScopeName": "Africa"
+},
+{
+"GeographicScopeID": 13,
+"ScopeName": "Australia"
+},
+{
+"GeographicScopeID": 14,
+"ScopeName": "New York"
+},
+{
+"GeographicScopeID": 15,
+"ScopeName": "Serbia"
+}
+],
+"JobTitle": [
+{
+"JobTitleID": 1,
+"JobTitleName": "Chief Executive Officer"
+},
+{
+"JobTitleID": 2,
+"JobTitleName": "President"
+},
+{
+"JobTitleID": 3,
+"JobTitleName": "Chief Technology and Innovation Officer"
+},
+{
+"JobTitleID": 4,
+"JobTitleName": "Chief Marketing Officer"
+},
+{
+"JobTitleID": 5,
+"JobTitleName": "Chief Financial Officer"
+},
+{
+"JobTitleID": 6,
+"JobTitleName": "Chief Legal Officer"
+},
+{
+"JobTitleID": 7,
+"JobTitleName": "Chief Employee Experience Officer"
+},
+{
+"JobTitleID": 8,
+"JobTitleName": "Chief Information Officer"
+},
+{
+"JobTitleID": 9,
+"JobTitleName": "Managing Director"
+},
+{
+"JobTitleID": 10,
+"JobTitleName": "Vice President, Canada"
+},
+{
+"JobTitleID": 11,
+"JobTitleName": "Senior Vice President"
+},
+{
+"JobTitleID": 12,
+"JobTitleName": "Client Experience Officer (Managing Director, Global Strategic Client Experience)"
+},
+{
+"JobTitleID": 13,
+"JobTitleName": "Vice President; Global Head of Cyber Response Solutions"
+},
+{
+"JobTitleID": 14,
+"JobTitleName": "Vice President"
+}
+],
+"Language": [
+{
+"LanguageID": 1,
+"LanguageName": "Chinese",
+"LanguageCode": "zh"
+},
+{
+"LanguageID": 2,
+"LanguageName": "Japanese",
+"LanguageCode": "ja"
+},
+{
+"LanguageID": 3,
+"LanguageName": "Korean",
+"LanguageCode": "ko"
+},
+{
+"LanguageID": 4,
+"LanguageName": "Russian",
+"LanguageCode": "ru"
+},
+{
+"LanguageID": 5,
+"LanguageName": "Arabic",
+"LanguageCode": "ar"
+},
+{
+"LanguageID": 6,
+"LanguageName": "Portuguese",
+"LanguageCode": "pt"
+},
+{
+"LanguageID": 7,
+"LanguageName": "Spanish",
+"LanguageCode": "es"
+},
+{
+"LanguageID": 8,
+"LanguageName": "Mandarin Chinese",
+"LanguageCode": "cmn"
+},
+{
+"LanguageID": 9,
+"LanguageName": "Serbo-Croatian",
+"LanguageCode": "hbs"
+},
+{
+"LanguageID": 10,
+"LanguageName": "Serbian",
+"LanguageCode": "sr"
+}
+],
+"LeaderLevel": [
+{
+"LeaderLevelID": 1,
+"LeaderLevelName": "Executive"
+},
+{
+"LeaderLevelID": 2,
+"LeaderLevelName": "Senior leader"
+},
+{
+"LeaderLevelID": 3,
+"LeaderLevelName": "Regional leader"
+},
+{
+"LeaderLevelID": 4,
+"LeaderLevelName": "Business/function leader"
+}
+],
+"LeadershipFunction": [
+{
+"LeadershipFunctionID": 1,
+"LeadershipFunctionName": "Executive"
+},
+{
+"LeadershipFunctionID": 2,
+"LeadershipFunctionName": "Sales/commercial"
+},
+{
+"LeadershipFunctionID": 3,
+"LeadershipFunctionName": "Technology and innovation"
+},
+{
+"LeadershipFunctionID": 4,
+"LeadershipFunctionName": "Marketing"
+},
+{
+"LeadershipFunctionID": 5,
+"LeadershipFunctionName": "Finance"
+},
+{
+"LeadershipFunctionID": 6,
+"LeadershipFunctionName": "Legal"
+},
+{
+"LeadershipFunctionID": 7,
+"LeadershipFunctionName": "People and employee experience"
+},
+{
+"LeadershipFunctionID": 8,
+"LeadershipFunctionName": "Regional leadership"
+},
+{
+"LeadershipFunctionID": 9,
+"LeadershipFunctionName": "Other"
+},
+{
+"LeadershipFunctionID": 10,
+"LeadershipFunctionName": "Legal talent"
+},
+{
+"LeadershipFunctionID": 11,
+"LeadershipFunctionName": "Client experience"
+},
+{
+"LeadershipFunctionID": 12,
+"LeadershipFunctionName": "Cyber incident response"
+},
+{
+"LeadershipFunctionID": 13,
+"LeadershipFunctionName": "Document review"
+}
+],
+"LocationType": [
+{
+"LocationTypeID": 1,
+"LocationTypeName": "Headquarters"
+},
+{
+"LocationTypeID": 2,
+"LocationTypeName": "Unknown"
+},
+{
+"LocationTypeID": 3,
+"LocationTypeName": "Office"
+},
+{
+"LocationTypeID": 4,
+"LocationTypeName": "Data centre"
+}
+],
+"MarketSegment": [
+{
+"MarketSegmentID": 1,
+"SegmentTypeID": 1,
+"SegmentName": "Financial Services",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 2,
+"SegmentTypeID": 1,
+"SegmentName": "Pharmaceutical, Life Sciences & Healthcare",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 3,
+"SegmentTypeID": 1,
+"SegmentName": "Insurance",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 4,
+"SegmentTypeID": 1,
+"SegmentName": "Transportation & Mobility",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 5,
+"SegmentTypeID": 1,
+"SegmentName": "Consumer Brands",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 6,
+"SegmentTypeID": 1,
+"SegmentName": "Technology",
+"Description": "Industry named in the supplied Consilio company profile.",
+"VerificationStatusID": 2,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 7,
+"SegmentTypeID": 2,
+"SegmentName": "Law firms",
+"Description": "Named target-client type in the supplied profile and service descriptions.",
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 8,
+"SegmentTypeID": 2,
+"SegmentName": "Corporate legal departments",
+"Description": "Named target-client type in the supplied profile and service descriptions.",
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 9,
+"SegmentTypeID": 3,
+"SegmentName": "Global leader in legal technology solutions and enterprise legal services",
+"Description": "Company-stated positioning claim; retain as attributed marketing language rather than an independently established fact.",
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+},
+{
+"MarketSegmentID": 10,
+"SegmentTypeID": 3,
+"SegmentName": "World’s largest AI legal data technology provider",
+"Description": "Company-stated positioning claim in TrueLaw acquisition release; not independently evaluated.",
+"VerificationStatusID": 1,
+"SourceID": 5,
+"LastVerifiedDate": "2026-10-09"
+}
+],
+"OfferingType": [
+{
+"OfferingTypeID": 1,
+"OfferingTypeName": "Service"
+},
+{
+"OfferingTypeID": 2,
+"OfferingTypeName": "Solution"
+},
+{
+"OfferingTypeID": 3,
+"OfferingTypeName": "Managed service"
+},
+{
+"OfferingTypeID": 4,
+"OfferingTypeName": "Consulting/advisory"
+}
+],
+"PeriodType": [
+{
+"PeriodTypeID": "PT001",
+"PeriodTypeName": "Annual"
+},
+{
+"PeriodTypeID": "PT002",
+"PeriodTypeName": "YTD"
+},
+{
+"PeriodTypeID": "PT003",
+"PeriodTypeName": "Point in time"
+},
+{
+"PeriodTypeID": "PT004",
+"PeriodTypeName": "Active workload"
+},
+{
+"PeriodTypeID": "PT005",
+"PeriodTypeName": "Monthly"
+},
+{
+"PeriodTypeID": "PT006",
+"PeriodTypeName": "Cumulative"
+},
+{
+"PeriodTypeID": "PT007",
+"PeriodTypeName": "Capacity"
+}
+],
+"PublicListingStatus": [
+{
+"PublicListingStatusID": 1,
+"PublicListingStatusName": "Unknown"
+},
+{
+"PublicListingStatusID": 2,
+"PublicListingStatusName": "Public"
+}
+],
+"Region": [
+{
+"RegionID": 1,
+"RegionName": "Global"
+},
+{
+"RegionID": 2,
+"RegionName": "North America"
+},
+{
+"RegionID": 3,
+"RegionName": "UK and Europe"
+},
+{
+"RegionID": 4,
+"RegionName": "Australia"
+}
+],
+"SegmentType": [
+{
+"SegmentTypeID": 1,
+"SegmentTypeName": "Industry"
+},
+{
+"SegmentTypeID": 2,
+"SegmentTypeName": "Client type"
+},
+{
+"SegmentTypeID": 3,
+"SegmentTypeName": "Market-position claim"
+}
+],
+"Service": [
+{
+"ServiceID": "S001",
+"ServiceCategoryID": "SC001",
+"ServiceName": "eDiscovery Services",
+"IsActive": true
+},
+{
+"ServiceID": "S002",
+"ServiceCategoryID": "SC002",
+"ServiceName": "Analytics & AI",
+"IsActive": true
+},
+{
+"ServiceID": "S003",
+"ServiceCategoryID": "SC003",
+"ServiceName": "Document Review Solutions",
+"IsActive": true
+},
+{
+"ServiceID": "S004",
+"ServiceCategoryID": "SC004",
+"ServiceName": "Risk Management & Compliance",
+"IsActive": true
+},
+{
+"ServiceID": "S005",
+"ServiceCategoryID": "SC005",
+"ServiceName": "Cyber Incident Response",
+"IsActive": true
+},
+{
+"ServiceID": "S006",
+"ServiceCategoryID": "SC006",
+"ServiceName": "Data Forensics & Investigations",
+"IsActive": true
+},
+{
+"ServiceID": "S007",
+"ServiceCategoryID": "SC007",
+"ServiceName": "Talent Solutions",
+"IsActive": true
+},
+{
+"ServiceID": "S008",
+"ServiceCategoryID": "SC008",
+"ServiceName": "Legal Transformation Services",
+"IsActive": true
+}
+],
+"ServiceCategory": [
+{
+"ServiceCategoryID": "SC001",
+"ServiceCategoryName": "eDiscovery",
+"Description": "End-to-end eDiscovery that takes data from secure intake and chain of custody through processing, hosting, review and production, with quality control on productions."
+},
+{
+"ServiceCategoryID": "SC002",
+"ServiceCategoryName": "Analytics & AI",
+"Description": "use machine learning, generative AI, and advanced data analytics to identify relevant information, uncover patterns, and prioritize document review, helping clients improve eDiscovery efficiency, accuracy, and cost-effectiveness."
+},
+{
+"ServiceCategoryID": "SC003",
+"ServiceCategoryName": "Document Review",
+"Description": "Managed document review delivered by review professionals (4,000+ active) and review centers. "
+},
+{
+"ServiceCategoryID": "SC004",
+"ServiceCategoryName": "Risk & Compliance",
+"Description": "Technology, workflows and expertise to build compliance and investigation strategies, protect sensitive data and lower downstream cost."
+},
+{
+"ServiceCategoryID": "SC005",
+"ServiceCategoryName": "Cybersecurity",
+"Description": "Experts use advanced techniques to find sensitive data and notify individuals affected by a cyber incident. "
+},
+{
+"ServiceCategoryID": "SC006",
+"ServiceCategoryName": "Forensics & Investigations",
+"Description": "Computer forensics investigation and data preservation services. "
+},
+{
+"ServiceCategoryID": "SC007",
+"ServiceCategoryName": "Legal Talent",
+"Description": "Flexible legal talent programs and enterprise talent solutions."
+},
+{
+"ServiceCategoryID": "SC008",
+"ServiceCategoryName": "Legal Transformation",
+"Description": "Not Available"
+}
+],
+"Source": [
+{
+"SourceID": 1,
+"SourceName": "North Carolina Secretary of State - Consilio, LLC business registration (principal office address)",
+"SourceURL": "https://sosnc.gov/online_services/search/Business_Registration_profile/9899313"
+},
+{
+"SourceID": 2,
+"SourceName": "Consilio website - Executive Management",
+"SourceURL": "https://www.consilio.com/about-consilio/executive-management"
+},
+{
+"SourceID": 3,
+"SourceName": "Consilio website - Consilio entity addresses",
+"SourceURL": "https://www.consilio.com/privacy/entities"
+},
+{
+"SourceID": 4,
+"SourceName": "Consilio website - eDiscovery Services",
+"SourceURL": "https://www.consilio.com/solutions/ediscovery-services"
+},
+{
+"SourceID": 5,
+"SourceName": "Consilio website - About Consilio",
+"SourceURL": "https://www.consilio.com/about"
+},
+{
+"SourceID": 6,
+"SourceName": "Consilio Language Capabilities fact sheet (c) 2022",
+"SourceURL": "https://edge.consilio.com/wp-content/uploads/2016/04/Consilio_Language_Capabilities_Fact_Sheet_US.pdf"
+},
+{
+"SourceID": 7,
+"SourceName": "Consilio Cross-Border Expertise fact sheet (c) 2021",
+"SourceURL": "https://edge.consilio.com/wp-content/uploads/2021/05/PMFS0069-Consilio_FactSheet_Cross_Border_Expertise.pdf"
+},
+{
+"SourceID": 8,
+"SourceName": "Consilio case study - Cross-matter custodian Spanish language document review",
+"SourceURL": "https://cn.consilio.com/wp-content/uploads/2019/08/Consilio_CaseStudy_Cross-Matter_Custodian_Spanish_Language_Document_Review.pdf"
+},
+{
+"SourceID": 9,
+"SourceName": "Consilio case study - Foreign language expertise enables AMLaw 100 firm to meet tight deadline (2021)",
+"SourceURL": "https://de.consilio.com/wp-content/uploads/2019/08/Consilio_CaseStudy_Foreign_Language_Expertise_Enables_AMLaw100Firm_to_Meet_Tight_Deadline.pdf"
+}
+],
+"TransactionType": [
+{
+"TransactionTypeID": 1,
+"TransactionTypeName": "Not applicable"
+},
+{
+"TransactionTypeID": 2,
+"TransactionTypeName": "Unknown"
+},
+{
+"TransactionTypeID": 3,
+"TransactionTypeName": "Whole-company acquisition"
+},
+{
+"TransactionTypeID": 4,
+"TransactionTypeName": "Business-unit acquisition"
+},
+{
+"TransactionTypeID": 5,
+"TransactionTypeName": "Merger"
+},
+{
+"TransactionTypeID": 6,
+"TransactionTypeName": "Investment/ownership change"
+},
+{
+"TransactionTypeID": 7,
+"TransactionTypeName": "Proposed combination"
+}
+],
+"ValueBasis": [
+{
+"ValueBasisID": 1,
+"ValueBasisName": "Approximate estimate"
+}
+],
+"ValueQualifier": [
+{
+"ValueQualifierID": 1,
+"QualifierName": "At least",
+"Description": "Reported figure is a minimum (e.g. 5,400+)."
+},
+{
+"ValueQualifierID": 2,
+"QualifierName": "More than",
+"Description": "Reported figure is a strict lower bound (more than the value)."
+},
+{
+"ValueQualifierID": 3,
+"QualifierName": "Exact",
+"Description": "Reported figure is stated as exact."
+}
+],
+"VerificationStatus": [
+{
+"VerificationStatusID": 1,
+"StatusName": "Verified",
+"Description": "Confirmed against the cited source."
+},
+{
+"VerificationStatusID": 2,
+"StatusName": "Partially verified",
+"Description": "Part of the record is confirmed; remaining elements need confirmation."
+},
+{
+"VerificationStatusID": 3,
+"StatusName": "Unverified",
+"Description": "Not confirmed against a reliable source."
+},
+{
+"VerificationStatusID": 4,
+"StatusName": "Not Available",
+"Description": "No information is available."
+}
+]
+}
