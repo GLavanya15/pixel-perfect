@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AwardsRouteImport } from './routes/awards'
 import { Route as FinancialsRouteImport } from './routes/financials'
 import { Route as HistoryRouteImport } from './routes/history'
+import { Route as LanguagesRouteImport } from './routes/languages'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as MappingRouteImport } from './routes/mapping'
@@ -38,6 +39,11 @@ const FinancialsRoute = FinancialsRouteImport.update({
 const HistoryRoute = HistoryRouteImport.update({
   id: '/history',
   path: '/history',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LanguagesRoute = LanguagesRouteImport.update({
+  id: '/languages',
+  path: '/languages',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LeadershipRoute = LeadershipRouteImport.update({
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/awards': typeof AwardsRoute
   '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
+  '/languages': typeof LanguagesRoute
   '/leadership': typeof LeadershipRoute
   '/locations': typeof LocationsRoute
   '/mapping': typeof MappingRoute
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/awards': typeof AwardsRoute
   '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
+  '/languages': typeof LanguagesRoute
   '/leadership': typeof LeadershipRoute
   '/locations': typeof LocationsRoute
   '/mapping': typeof MappingRoute
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/awards': typeof AwardsRoute
   '/financials': typeof FinancialsRoute
   '/history': typeof HistoryRoute
+  '/languages': typeof LanguagesRoute
   '/leadership': typeof LeadershipRoute
   '/locations': typeof LocationsRoute
   '/mapping': typeof MappingRoute
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/awards'
     | '/financials'
     | '/history'
+    | '/languages'
     | '/leadership'
     | '/locations'
     | '/mapping'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/awards'
     | '/financials'
     | '/history'
+    | '/languages'
     | '/leadership'
     | '/locations'
     | '/mapping'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/awards'
     | '/financials'
     | '/history'
+    | '/languages'
     | '/leadership'
     | '/locations'
     | '/mapping'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   AwardsRoute: typeof AwardsRoute
   FinancialsRoute: typeof FinancialsRoute
   HistoryRoute: typeof HistoryRoute
+  LanguagesRoute: typeof LanguagesRoute
   LeadershipRoute: typeof LeadershipRoute
   LocationsRoute: typeof LocationsRoute
   MappingRoute: typeof MappingRoute
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/history'
       fullPath: '/history'
       preLoaderRoute: typeof HistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/languages': {
+      id: '/languages'
+      path: '/languages'
+      fullPath: '/languages'
+      preLoaderRoute: typeof LanguagesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/leadership': {
@@ -240,6 +260,7 @@ const rootRouteChildren: RootRouteChildren = {
   AwardsRoute: AwardsRoute,
   FinancialsRoute: FinancialsRoute,
   HistoryRoute: HistoryRoute,
+  LanguagesRoute: LanguagesRoute,
   LeadershipRoute: LeadershipRoute,
   LocationsRoute: LocationsRoute,
   MappingRoute: MappingRoute,
