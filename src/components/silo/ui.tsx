@@ -1,36 +1,18 @@
 import { useEffect, useRef, type ReactNode } from "react";
-import { CheckCircle2, CircleDashed, CircleAlert, CircleSlash, ExternalLink, Search, X } from "lucide-react";
-import type { Evidence, VerificationStatusName } from "@/data/about";
+import { Link, useRouter } from "@tanstack/react-router";
+import { ArrowLeft, ArrowRight, ExternalLink, Search, X, type LucideIcon } from "lucide-react";
+import type { Evidence } from "@/data/about";
+import { initials } from "@/data/present";
 import { cn } from "@/lib/utils";
 
-const STATUS: Record<VerificationStatusName, { icon: typeof CheckCircle2; cls: string }> = {
-  Verified: { icon: CheckCircle2, cls: "text-status-verified" },
-  "Partially verified": { icon: CircleDashed, cls: "text-status-partial" },
-  Unverified: { icon: CircleAlert, cls: "text-status-unverified" },
-  "Not Available": { icon: CircleSlash, cls: "text-status-na" },
-};
-
-/** Verification badge — icon + text label, never colour alone. */
-export function StatusBadge({ status, className }: { status?: VerificationStatusName | undefined; className?: string  | undefined}) {
-  if (!status) return null;
-  const s = STATUS[status];
-  const Icon = s.icon;
-  return (
-    <span className={cn("inline-flex items-center gap-1 rounded-full border border-current/30 px-2 py-0.5 text-[0.7rem] font-medium", s.cls, className)}>
-      <Icon className="h-3 w-3" aria-hidden />
-      {status}
-    </span>
-  );
-}
-
-export function Tag({ children, tone = "default" }: { children: ReactNode; tone?: "default" | "beacon" | "warn"  | undefined}) {
+export function Tag({ children, tone = "default" }: { children: ReactNode; tone?: "default" | "beacon" | "outline" | undefined }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-md px-2 py-0.5 text-[0.7rem] font-medium",
+        "inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium",
         tone === "default" && "bg-muted text-muted-foreground",
         tone === "beacon" && "bg-beacon-soft text-beacon",
-        tone === "warn" && "border border-status-unverified/40 text-status-unverified",
+        tone === "outline" && "border border-border text-foreground",
       )}
     >
       {children}
@@ -38,55 +20,96 @@ export function Tag({ children, tone = "default" }: { children: ReactNode; tone?
   );
 }
 
-export function SectionHeader({ code, title, statement, children }: { code: string; title: string; statement?: string | undefined; children?: ReactNode  | undefined}) {
+/** Compact page header with back action. */
+export function PageHeader({ title, description, actions }: { title: string; description?: string | undefined; actions?: ReactNode }) {
+  const router = useRouter();
   return (
-    <header className="mb-8 animate-rise">
-      <p className="meta">About Consilio · Sector {code}</p>
-      <h1 className="display mt-2 text-4xl text-foreground md:text-5xl">{title}</h1>
-      {statement && <p className="mt-3 max-w-2xl text-muted-foreground">{statement}</p>}
-      {children}
+    <header className="mb-6 flex flex-wrap items-end justify-between gap-4 animate-rise">
+      <div className="min-w-0">
+        <button
+          onClick={() => (window.history.length > 1 ? router.history.back() : router.navigate({ to: "/" }))}
+          className="mb-2 inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground"
+        >
+          <ArrowLeft className="h-3.5 w-3.5" aria-hidden /> Back
+        </button>
+        <h1 className="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">{title}</h1>
+        {description && <p className="mt-1 max-w-2xl text-sm text-muted-foreground">{description}</p>}
+      </div>
+      {actions}
     </header>
   );
 }
+/** @deprecated kept for the internal mapping report */
+export const SectionHeader = ({ title, statement }: { code?: string; title: string; statement?: string }) => <PageHeader title={title} description={statement} />;
 
-export function Field({ label, value, children }: { label: string; value?: ReactNode | undefined; children?: ReactNode  | undefined}) {
+/** Large value, muted label below. */
+export function Stat({ value, label, sub, className }: { value: ReactNode; label: ReactNode; sub?: ReactNode; className?: string }) {
+  return (
+    <div className={className}>
+      <p className="text-3xl font-semibold tracking-tight text-foreground tabular-nums">{value}</p>
+      <p className="mt-1 text-sm text-muted-foreground">{label}</p>
+      {sub && <div className="mt-2">{sub}</div>}
+    </div>
+  );
+}
+
+export function StatCard({ value, label, sub }: { value: ReactNode; label: ReactNode; sub?: ReactNode }) {
+  return <div className="panel p-5"><Stat value={value} label={label} sub={sub} /></div>;
+}
+
+/** Fully clickable overview card with title, icon and right-aligned action. */
+export function PreviewCard({ to, icon: Icon, title, action = "View more", className, children }: { to: string; icon: LucideIcon; title: string; action?: string; className?: string; children: ReactNode }) {
+  return (
+    <Link to={to} className={cn("panel panel-interactive group flex flex-col p-5", className)}>
+      <div className="mb-4 flex items-center gap-2">
+        <span className="flex h-7 w-7 items-center justify-center rounded-md bg-beacon-soft text-beacon"><Icon className="h-4 w-4" aria-hidden /></span>
+        <h2 className="text-sm font-semibold text-foreground">{title}</h2>
+        <span className="ml-auto inline-flex items-center gap-1 text-xs font-medium text-beacon">
+          {action} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden />
+        </span>
+      </div>
+      <div className="flex-1">{children}</div>
+    </Link>
+  );
+}
+
+export function Avatar({ name, size = "md" }: { name: string; size?: "sm" | "md" | "lg" }) {
+  return (
+    <span
+      aria-hidden
+      className={cn(
+        "flex shrink-0 items-center justify-center rounded-full bg-beacon-soft font-semibold text-beacon",
+        size === "sm" && "h-8 w-8 text-xs",
+        size === "md" && "h-11 w-11 text-sm",
+        size === "lg" && "h-14 w-14 text-base",
+      )}
+    >
+      {initials(name)}
+    </span>
+  );
+}
+
+export function Field({ label, value, children }: { label: string; value?: ReactNode | undefined; children?: ReactNode | undefined }) {
   const v = children ?? value;
   if (v === undefined || v === null || v === "") return null;
   return (
     <div>
-      <dt className="meta">{label}</dt>
-      <dd className="mt-1 text-sm text-foreground">{v}</dd>
+      <dd className="text-base font-medium text-foreground">{v}</dd>
+      <dt className="mt-0.5 text-xs text-muted-foreground">{label}</dt>
     </div>
   );
 }
 
+/** Shows the public reference link only. */
 export function EvidenceBlock({ e }: { e: Evidence }) {
-  if (!e.verificationStatus && !e.source && !e.lastVerifiedDate) return null;
+  if (!e.source?.sourceUrl) return null;
   return (
-    <div className="mt-6 rounded-lg border border-border bg-muted/40 p-4">
-      <p className="meta mb-3">Evidence</p>
-      <dl className="grid gap-3 sm:grid-cols-2">
-        <Field label="Verification status">{e.verificationStatus && <StatusBadge status={e.verificationStatus} />}</Field>
-        <Field label="Last verified" value={e.lastVerifiedDate} />
-        <div className="sm:col-span-2">
-          <Field label="Source">
-            {e.source &&
-              (e.source.sourceUrl ? (
-                <a href={e.source.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-start gap-1 text-primary underline-offset-2 hover:underline">
-                  {e.source.sourceName} <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden />
-                </a>
-              ) : (
-                e.source.sourceName
-              ))}
-          </Field>
-        </div>
-      </dl>
-      {!e.source && <p className="mt-2 text-xs text-muted-foreground">No source document recorded in the workbook.</p>}
-    </div>
+    <a href={e.source.sourceUrl} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-1 text-sm text-primary hover:underline">
+      Reference: {e.source.sourceName} <ExternalLink className="h-3 w-3 shrink-0" aria-hidden />
+    </a>
   );
 }
 
-/** Accessible slide-over detail panel. */
 export function DetailPanel({ open, onClose, title, kicker, children }: { open: boolean; onClose: () => void; title?: string | undefined; kicker?: string | undefined; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -100,12 +123,12 @@ export function DetailPanel({ open, onClose, title, kicker, children }: { open: 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
       <button aria-label="Close details" className="absolute inset-0 bg-background/60 backdrop-blur-sm" onClick={onClose} />
-      <div ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-label={title} className="relative h-full w-full max-w-xl overflow-y-auto bg-panel-strong p-8 shadow-2xl animate-rise outline-none">
+      <div ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-label={title} className="relative h-full w-full max-w-lg overflow-y-auto bg-popover p-6 shadow-2xl animate-rise outline-none sm:p-8">
         <button onClick={onClose} className="absolute right-4 top-4 rounded-md p-2 text-muted-foreground hover:text-foreground" aria-label="Close">
           <X className="h-5 w-5" />
         </button>
-        {kicker && <p className="meta">{kicker}</p>}
-        {title && <h2 className="display mt-2 pr-8 text-3xl">{title}</h2>}
+        {kicker && <p className="text-xs font-medium text-beacon">{kicker}</p>}
+        {title && <h2 className="mt-1 pr-8 text-2xl font-semibold tracking-tight">{title}</h2>}
         <div className="mt-6">{children}</div>
       </div>
     </div>
@@ -114,14 +137,14 @@ export function DetailPanel({ open, onClose, title, kicker, children }: { open: 
 
 export function SearchInput({ value, onChange, placeholder }: { value: string; onChange: (v: string) => void; placeholder: string }) {
   return (
-    <label className="relative flex min-w-56 flex-1 items-center">
+    <label className="relative flex min-w-0 flex-1 basis-56 items-center">
       <Search className="pointer-events-none absolute left-3 h-4 w-4 text-muted-foreground" aria-hidden />
       <span className="sr-only">{placeholder}</span>
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="h-10 w-full rounded-lg border border-input bg-panel pl-9 pr-3 text-sm text-foreground placeholder:text-muted-foreground"
+        className="h-10 w-full rounded-lg border border-input bg-card pl-9 pr-3 text-sm text-foreground placeholder:text-muted-foreground"
       />
     </label>
   );
@@ -129,9 +152,9 @@ export function SearchInput({ value, onChange, placeholder }: { value: string; o
 
 export function SelectFilter({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: (string | number)[] }) {
   return (
-    <label className="flex flex-col gap-1">
-      <span className="meta">{label}</span>
-      <select value={value} onChange={(e) => onChange(e.target.value)} className="h-10 rounded-lg border border-input bg-panel px-3 text-sm text-foreground">
+    <label className="flex min-w-0 flex-col gap-1">
+      <span className="text-xs text-muted-foreground">{label}</span>
+      <select value={value} onChange={(e) => onChange(e.target.value)} className="h-10 max-w-full rounded-lg border border-input bg-card px-3 text-sm text-foreground">
         <option value="">All</option>
         {options.map((o) => (
           <option key={o} value={String(o)}>{o}</option>
@@ -143,12 +166,10 @@ export function SelectFilter({ label, value, onChange, options }: { label: strin
 
 export function FilterBar({ children, count, total, onReset, active }: { children: ReactNode; count: number; total: number; onReset: () => void; active: boolean }) {
   return (
-    <div className="panel mb-6 flex flex-wrap items-end gap-4 p-4">
+    <div className="panel mb-6 flex flex-wrap items-end gap-3 p-4">
       {children}
       <div className="ml-auto flex items-center gap-3">
-        <span className="text-sm text-muted-foreground" aria-live="polite">
-          {count} of {total} records
-        </span>
+        <span className="text-sm text-muted-foreground" aria-live="polite">Showing {count} of {total}</span>
         <button onClick={onReset} disabled={!active} className="h-10 rounded-lg border border-input px-3 text-sm text-foreground disabled:opacity-40">
           Reset
         </button>
@@ -160,7 +181,7 @@ export function FilterBar({ children, count, total, onReset, active }: { childre
 export function EmptyState({ onReset }: { onReset: () => void }) {
   return (
     <div className="panel p-10 text-center">
-      <p className="text-muted-foreground">No records match these filters.</p>
+      <p className="text-muted-foreground">Nothing matches these filters.</p>
       <button onClick={onReset} className="mt-3 text-sm text-primary underline">Clear filters</button>
     </div>
   );
